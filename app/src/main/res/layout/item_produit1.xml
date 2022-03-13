@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imagesp"
+        android:layout_width="116dp"
+        android:layout_height="131dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@mipmap/pizza1" />
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="198dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/imagesp"
+        android:text="kkkoookkkaa"
+        android:textColor="#050505"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="33dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/nom"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/imagesp"
+        app:srcCompat="@mipmap/flour" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="27dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/imagesp"
+        app:srcCompat="@mipmap/hourglass" />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="26dp"
+        android:layout_height="21dp"
+        android:layout_below="@+id/nom"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/imageView2"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/duree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombre"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@+id/imageView3"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/id"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+</RelativeLayout>

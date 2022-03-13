@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.R xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imagesp"
+        android:layout_width="131dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/pizza1" />
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="186dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imagesp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/duree"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/image1" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="43dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toEndOf="@+id/imagesp"
+        app:layout_constraintTop_toBottomOf="@+id/nom"
+        app:srcCompat="@mipmap/ingredients" />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="55dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="26dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/duree"
+        app:layout_constraintStart_toEndOf="@+id/image1"
+        app:layout_constraintTop_toTopOf="@+id/nom"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="33dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toEndOf="@+id/imagesp"
+        app:layout_constraintTop_toBottomOf="@+id/image1"
+        app:srcCompat="@mipmap/hourglass" />
+
+</androidx.R>
